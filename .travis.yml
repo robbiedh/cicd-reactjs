@@ -1,13 +1,15 @@
 language: node_js
 node_js:
-  - "stable"
+- stable
 cache:
   directories:
-    - node_modules
+  - node_modules
 script:
-  - npm test
-  - npm run build
+- npm test
+- npm run build
 deploy:
-  deploy:
-  provider: heroku 
+  deploy: 
+  provider: heroku
   app: cicd-reactjs-2020
+  api_key:
+    secure: D7uSy1/J4HpNUwGOfF2vuLnjMLzHwyWEZPLwLg762adP+zsfd09oZ3ZMCTvUglBTnZQhlUnVhwo86h9oWkIlFdEueoj8DLJDNXNVim39fW2c1qvzdXSVUQF+E9HWfpLWeTWYYIbONXEENWWp/iX2w86CWYrKRf/Y3IInh7CPAxOo0RmVbF3p0UFSnTmWicNuTg+NRaydhjo7/mcYmk9aN7GdsrSr8rp88fN4phxIdSSQq06m8pwoqvfSYTbiahYVzd0EH8MNc71M2jlGDNMb+0fOTVr8qEwsBDYq8rGXWi4z+QS4iqpULcCwb6/g8ltcp2seAOdgiVATLQdWc12V7vm+Hil6AzHALCjKVk1QRYi7Ua3HJ1T6czUyfL2jM0tiQ3e6DTR/7zujN7SfIR99k+kC/8MJJ6Hv16TiHBrsVM/urlezsl5IyHzvolFIPEjjBEF1T9KgUUQvm48hxKeOCFhzXHGowm46gFT1GIUe2OV/aPrJMuCQ8tNzszvtB4R36IpivSO1llNgWyLIJsAZrXhbiQHdLT80Vw4+ce7jY46mKzLNlMl3INWw3hB5j3DL4Dxa5YM+j/4LdbN2x05C6Yw33IWWNlsjuXxU9QqtQzrKyHsB6nVKfeEcQps2PJkpOF3raVT+w1+9Epre2pj8AcSArk90t0RaeA5qpqa0S5k=
